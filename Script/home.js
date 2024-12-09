@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function rerender() {
         localStorage.clear();
         sessionStorage.clear();
-        window.location.href = '../index.html'; 
+        window.location.href = '../login/login.html'; 
     }
 
     if (Loggin === "true") {
