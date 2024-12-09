@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function rerender() {
         localStorage.clear();
         sessionStorage.clear();
-        window.location.href = '../index.html'; 
+        window.location.href = 'https://devarajugurram.github.io/QuizApp/index.html'; 
     }
 
     if (Loggin === "true") {
@@ -56,13 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
     function checkAndRedirect() {
         hiddenpart.style.display = "none";
         blurpart.style.filter = "blur(0px)";
-        window.location.href = "../Test/test.html";
+        window.location.href = "https://devarajugurram.github.io/QuizApp/Test/test.html";
     }
 
     function keepAndRedirect() {
         hiddenpart.style.display = "none";
         blurpart.style.filter = "blur(0px)";
-        window.location.href = "../index.html";
+        window.location.href = "https://devarajugurram.github.io/QuizApp/index.html";
     }
 
 });
