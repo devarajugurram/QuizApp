@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 flag = true;
                 localStorage.setItem("isLogin","true");
                 sessionStorage.setItem("isLoggin", localStorage.getItem("isLogin"));
-                window.location.href = "../Home/home.html"; 
+                window.location.href = "../index.html"; 
             }
         }
 

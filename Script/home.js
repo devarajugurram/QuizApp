@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function rerender() {
         localStorage.clear();
         sessionStorage.clear();
-        window.location.href = '../Home/home.html'; 
+        window.location.href = '../index.html'; 
     }
 
     if (Loggin === "true") {
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function keepAndRedirect() {
         hiddenpart.style.display = "none";
         blurpart.style.filter = "blur(0px)";
-        window.location.href = "../Home/home.html";
+        window.location.href = "../index.html";
     }
 
 });
