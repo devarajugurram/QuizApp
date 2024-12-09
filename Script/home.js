@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function rerender() {
         localStorage.clear();
         sessionStorage.clear();
-        window.location.href = '../login/login.html'; 
+        window.location.href = '../QuizApp/login/login.html'; 
     }
 
     if (Loggin === "true") {
