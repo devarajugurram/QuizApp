@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const data = [{
-        "username": "devaraju",
-        "password": "Dev@r@ju@1."
+        "username": "username",
+        "password": "password"
     }];
     localStorage.setItem("isLogin","false");
 
