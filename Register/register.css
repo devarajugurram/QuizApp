@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+*::placeholder{
+    font-size: small;
+    color: #0D1117;
+}
+.login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D1117;
+    background:linear-gradient(#0D1117,#0D1117);
+    font-family: 'Mona Sans';
+    overflow-y: hidden;
+}
+
+.login img {
+    position: absolute;
+    height: 80%;
+    left: 0;
+}
+
+.temp {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    padding: 1%;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.login-form {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    z-index: 100;
+}
+
+form {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.input-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+    border:1px solid pink;
+    background-color: #151B23;
+}
+
+.redirect {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redirect a {
+    text-decoration: none;
+    color: #3FB950;
+    padding: 1%;
+}
+
+fieldset legend {
+    font-size: 25px;
+    color: aqua;
+}
+.username ,.password{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+.username label,.password label {
+    text-align: center;
+    vertical-align: center;
+    font-size: large;
+    color: white;
+}
+
+.username input , .password input {
+    width: 70%;
+    height: 3vh;
+    border: none;
+    border-bottom: 1px solid white;
+    caret-color: pink;
+    font-size: large;
+    background: transparent;
+    color: white;
+    
+}
+
+.username, .password {
+    text-align: center;
+}
+
+.submit {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit input {
+    width: 30%;
+    height: 70%;
+    border-radius: 10px;
+    font-size: large;
+    background-color: #7E44C5;
+    color: white;
+}
+.help {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.help a{
+    text-decoration: none;
+    color: #3FB950;
+    padding: 1%;
+}
+
+@media screen and (max-width: 745px) {
+    .login {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .login-form {
+        justify-content: center;
+    }
+
+    .login-form ,form,fieldset{
+        width: 75%;
+        height: 77%;
+    }
+
+    .username,.password {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .username input,.password input {
+        width: 100%;
+    }
+    .submit input {
+        width: 50%;
+        height: 40%;
+        font-size: small;
+    }
+    .login img {
+        display: none;
+    }
+}

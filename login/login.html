@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./login.css"/>
+        <title>Login Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Test/loader.css"/>
+    </head>
+    <body>
+        <div class="loader"> 
+            <div class="preloader"></div>
+            <div class="preloader"></div>
+            <div class="preloader"></div>
+            <div class="load">Loading...</div>
+        </div>
+        <div class="login">
+            <div class="temp">
+            <div class="login-form">
+                <form action="../Home/home.html" method="GET" onSubmit="return checkCredentials()">
+                    <div class="input-form">
+                        <fieldset>
+                            <legend>Login</legend>
+                            <div class="username">
+                                <label for="user">Username: </label>
+                                <input id="user" type="text" placeholder="Username" name="username" required/>
+                            </div>
+                            <div class="password">
+                                <label for="password">Password: </label>
+                                <input id="password" type="password" placeholder="********" name="password" required/>
+                            </div>
+                            <div class="help">
+                                <a href="#">Forget Password?</a> <a href="../Register/register.html">Register</a>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Login"/>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+            </div>
+            <img src="../images/background.png" alt="background"/>
+        </div>
+        <script src="../Script/loginscript.js"></script>
+        <script>
+            window.addEventListener('load',function() {
+                var loader = document.querySelector('.loader');
+                loader.style.display = "none";
+            });
+        </script>
+    </body>
+</html>

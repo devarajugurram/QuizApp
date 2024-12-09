@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./register.css"/>
+        <title>Registration Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Test/loader.css"/>
+    </head>
+    <body>
+        <div class="loader"> 
+            <div class="preloader"></div>
+            <div class="preloader"></div>
+            <div class="preloader"></div>
+            <div class="load">Loading...</div>
+        </div>
+        <div class="login">
+            <div class="temp">
+                <div class="login-form">
+                    <form id="registerForm" method="GET">
+                        <div class="input-form">
+                            <fieldset>
+                                <legend>Register</legend>
+                                <div class="username">
+                                    <label for="user">Username: </label>
+                                    <input id="user" type="text" placeholder="Username" name="username" required/>
+                                </div>
+                                <div class="password">
+                                    <label for="password">Password:  </label>
+                                    <input id="password" type="password" placeholder="********" name="password" required/>
+                                </div>
+                                <div class="password">
+                                    <label for="confirm-password">Confirm: </label>
+                                    <input id="confirm-password" type="password" placeholder="********" name="confirm_password" oninput="checkPassword()" required/>
+                                </div>
+                                <div class="redirect"><a href="../login/login.html">Already have an account?</a></div>
+                                <div class="submit">
+                                    <input type="submit" value="Register"/>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <img src="../images/background.png" alt="background"/>
+        </div>
+        <script type="text/javascript" src="../Script/loginscript.js"></script>
+        <script>
+            window.addEventListener('load',function() {
+                var loader = document.querySelector('.loader');
+                loader.style.display = "none";
+            });
+        </script>
+    </body>
+</html>

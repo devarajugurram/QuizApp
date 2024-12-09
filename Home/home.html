@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <link rel="stylesheet" href="./home.css"/>
+        <link rel="stylesheet" href="../Test/loader.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"/>
+    </head>
+    <body>
+        <div class="loader"> 
+            <div class="preloader"></div>
+            <div class="preloader"></div>
+            <div class="preloader"></div>
+            <div class="load">Loading...</div>
+        </div>
+        <div class="main">
+            <div class="container">
+                    <navbar class="navbar">
+                        <div class="logo">
+                            <img src="../images/logo.png" alt="this is logo"/>
+                            <h1>UEST</h1>
+                        </div>
+                        <div class="options">
+                                <div class="help result"><a href="../Result/result.html" style="text-decoration: none; color: white; display: inline; font-family: Mona Sans;">Result</a></div>
+                                <div class="help score" style="font-family: Mona Sans; font-size: medium; color: white; cursor: default;"></div>
+                                <div class="in"><a href="../login/login.html" style="text-decoration: none; color: white; font-family:Mona Sans;">Login</a></div>
+                                <div class="out"><button style="cursor: pointer;">Logout</button></div>
+                        </div>
+                    </navbar>
+                    <div class="options-quiz">
+                        <div class="pick"><h1 style="color: white;">Choose any language to Proceed</h1></div>
+                        <br>
+                        <div class="grid-options">
+                            <div class="lang c">
+                                <img src="../images/c_language.png" alt="c language"/>
+                            </div>
+                            <div class="lang cpp">
+                                <img src="../images/cpp_language.png" alt="cpp language"/>
+                            </div>
+                            <div class="lang java">
+                                <img src="../images/java_language.png" alt="java"/>
+                            </div>
+                            <div class="lang python">
+                                <img src="../images/python_language.png" alt="python"/>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div style="display: none;" class="confirmation">
+            <div class="conf-block">
+                <div class="state" style="padding: 5px;">
+                    <p>Do you want to start test?</p>
+                </div>
+                <div class="ch">
+                    <div class="yes">
+                        <input type="button" value="YES" id="yesButton"/>
+                    </div>
+                    <div class="no">
+                        <input type="button" value="NO" id="noButton"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../Script/home.js"></script>
+        <script src="../Script/data.js"></script>
+    </body>
+    <script>
+        var totalScore = sessionStorage.getItem("totalscore");
+        const tscore = document.querySelector('.score');
+        const putscore = document.createElement('a');
+        putscore.textContent = totalScore === null ? "0" : totalScore;
+        tscore.appendChild(putscore);
+        window.addEventListener('load',function() {
+            var loader = document.querySelector('.loader');
+            loader.style.display = "none";
+        });
+    </script>
+</html>
